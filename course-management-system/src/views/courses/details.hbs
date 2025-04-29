@@ -1,0 +1,11 @@
+<h1>{{course.courseName}}</h1>
+<p><strong>Price:</strong> ${{course.price}}</p>
+<p><strong>Duration:</strong> {{course.duration}} hours</p>
+<p><strong>Start Date:</strong> {{formatDate course.courseStartDate}}</p>
+<img src="{{course.image}}" alt="{{course.courseName}}" class="img-fluid">
+<p><strong>Description:</strong></p>
+<p>{{course.description}}</p>
+
+<a href="/courses" class="btn btn-primary">Back to Courses</a>
+<a href="/courses/{{course._id}}/edit" class="btn btn-warning">Edit Course</a>
+<a href="/courses/{{course._id}}/delete" class="btn btn-danger">Delete Course</a>
